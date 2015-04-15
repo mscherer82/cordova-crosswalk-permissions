@@ -17,6 +17,7 @@
 
   <platform name="android">
     <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21" />
       <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     </config-file>
