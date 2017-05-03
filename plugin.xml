@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="me.dispatch.crosswalk-permissions"
+    id="me.dispatch.write-permissions"
     version="0.1">
-  <name>Cordova Crosswalk Permissions</name>
+  <name>Cordova Write Permissions</name>
   <license>Apache 2.0 License</license>
   <author>Dispatch</author>
   <description>
-    Request the necessary crosswalk permissions on Android for a Cordova project.
+    Request the necessary wirte permissions.
   </description>
 
   <info>
-    This plugin replaces the need for adding permisions to the AndroidManifest.xml
-    file when using Crosswalk with Cordova.
+    This plugin replaces the need for adding permisions to the AndroidManifest.xml.
   </info>
 
   <platform name="android">
     <config-file target="AndroidManifest.xml" parent="/manifest">
       <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21" />
-      <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
     </config-file>
   </platform>
 </plugin>
